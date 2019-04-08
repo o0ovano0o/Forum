@@ -109,6 +109,7 @@ table.category-table {
 	width: 100%;
 	margin-bottom: 35px;
 	font-family: Calibri;
+	margin: auto;
 }
 
 table.category-table td.main-category {

@@ -10,12 +10,12 @@
 	
 	if (mysqli_num_rows($result) != 0) {
 		$_SESSION['username'] = $username;
-		header("Location: ".$_SERVER['HTTP_REFERER']);
+		header("Location: "."/forum/home.php");
 	} else {
-		if (substr($_SERVER['HTTP_REFERER'], -1) == '/') {
-			header("Location: ".$_SERVER['HTTP_REFERER']."login-fail");
-		} else {
-			header("Location: ".$_SERVER['HTTP_REFERER']."/login_fail");
-		}
+			if(substr($_SERVER['HTTP_REFERER'], -10)=="login_fail")
+				header("Location: ".$_SERVER['HTTP_REFERER']);
+			else
+			header("Location: ".$_SERVER['HTTP_REFERER']."?status=login_fail");
+		
 	}
 ?>
