@@ -1,10 +1,14 @@
 * {
 	margin: 0px;
 	padding: 0px;
+
 }
 
 h1 a:hover {
 	text-decoration: none;
+}
+body{
+	background-color: #EFEFEF!important;
 }
 
 h1, h2, h3 {
@@ -40,7 +44,7 @@ div.forumdesc {
 }
 
 div.content {
-	background-color: #EFEFEF;
+	background-color: white;
 	margin-top: 15px;
 	width: 970px;
 	display: block;
@@ -54,7 +58,16 @@ div.header h1 {
 	font-family: Century Gothic;
 	font-weight: normal;
 }
-
+#conten {
+	background-color: white;
+	padding: 15px;
+	margin-top: 10px;
+}
+#title {
+	background-color: #83DFCE;
+		padding: 15px;
+	margin-top: 10px;
+}
 a {
 	text-decoration: none;
 	color: #0066FF;
@@ -66,7 +79,7 @@ p{
 
 input[type="submit"], button {
 	border-radius: 4px;
-	color: #EFEFEF;
+	color: white;
 	width: 200px;
 	padding: 7px;
 	font-family: Calibri;
@@ -110,6 +123,7 @@ table.category-table {
 	margin-bottom: 35px;
 	font-family: Calibri;
 	margin: auto;
+	padding: 0;
 }
 
 table.category-table td.main-category {

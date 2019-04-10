@@ -41,7 +41,7 @@
                echo '<a class="navbar-brand" href="#"> <i class="fa d-inline fa-lg fas fa-user"></i>&nbsp;'.$_SESSION["username"];
             } 
             else
-            echo  '<a class="navbar-brand" href="login.php"> <i class="fa d-inline fa-lg fa-sign-in"></i>&nbsp;Login'; ?>
+            echo  '<a class="navbar-brand" href="/forum/login.php"> <i class="fa d-inline fa-lg fa-sign-in"></i>&nbsp;Login'; ?>
             </a>
           <a class="navbar-brand" href="/forum/logoutt.php"><i class="fa fa-user  fa-sign-out"></i><i class="fa d-inline fa-lg fa-lg-out"></i>&nbsp;Logout</a></div>
       </div>
@@ -49,7 +49,7 @@
   </nav>
   
   <div class="text-center forumdesc" style="width: 100%;">
-      <h4>Welcome to the world's coolest forum. This is for noobs just like you!</h4>
+      <h4 style="padding: 30px;">The best way to predict the future is to create it. – Abraham Lincoln</h4>
   </div>
   <div style="clear: both;">
   </div>
@@ -59,16 +59,16 @@
           echo "<form action='/forum/addnewtopics.php?cid=".$_GET['cid']."&scid=".$_GET['scid']."'
               method='POST' >
               <p>Title: </p>
-              <input type='text' id='topic' name='topic' size='100' style='width:90%;' />
+              <input type='text' id='topic' name='topic' minlength='5' size='100' style='width:90%;' maxlength='120' />
               <p>Content: </p>
-              <textarea id='content' name='content' style='width:90%;min-height:150px;'></textarea><br />
+              <textarea id='content' name='content' style='width:90%;min-height:150px;' maxlength='1500' minlength='10'></textarea><br />
               <input type='submit' value='add new post' /></form>";
         } else {
           echo "<p>please login first or <a href='/forum/regest.html'>click here</a> to register.</p>";
         }
       ?>
     </div>
-   
+
     <div class="py-3" id="footer" style="clear: both;">
       <div class="container">
         <div class="row">

@@ -33,7 +33,7 @@
           <a class="navbar-brand" href="#">
           <i class="fa d-inline fa-lg fa-sign-in"></i>&nbsp;Login
         </a>
-          <a class="navbar-brand  " href="/forum/regest.html">
+          <a class="navbar-brand  " href="/forum/regest.php">
             <i class="fa  d-inline fa-lg fa-lg-out far fa-user-plus"></i>
            &nbsp;Register</a></div>
       </div>
@@ -47,6 +47,13 @@
              <?php
                     login();
                 ?>
+                 <?php 
+                      if (isset($_GET['status'])) {
+                  if ($_GET['status'] == 'login_fail') {
+                    echo "<script type='text/javascript'>alert('username or password is not connect. please try another')</script>";
+                  } 
+                }
+              ?>
     </div>
         </div>
       </div>

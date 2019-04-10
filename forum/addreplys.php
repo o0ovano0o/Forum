@@ -12,6 +12,7 @@
 								  VALUES ('".$cid."', '".$scid."', '".$tid."', '".$_SESSION['username']."', '".$comment."', NOW());");
 								  
 	if ($insert) {
+		$update = mysqli_query($con, "UPDATE users SET point = point + 1 WHERE username='".$_SESSION['username']."'");
 		header("Location: /forum/readtopics/".$cid."/".$scid."/".$tid."");
 	}
 ?>

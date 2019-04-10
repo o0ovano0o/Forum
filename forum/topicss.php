@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>UDict</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  
   <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -41,7 +42,7 @@
                echo '<a class="navbar-brand" href="#"> <i class="fa d-inline fa-lg fas fa-user"></i>&nbsp;'.$_SESSION["username"];
             } 
             else
-            echo  '<a class="navbar-brand" href="login.php"> <i class="fa d-inline fa-lg fa-sign-in"></i>&nbsp;Login'; ?>
+            echo  '<a class="navbar-brand" href=\forum/login.php> <i class="fa d-inline fa-lg fa-sign-in"></i>&nbsp;Login'; ?>
             </a>
           <a class="navbar-brand" href="/forum/logoutt.php"><i class="fa fa-user  fa-sign-out"></i><i class="fa d-inline fa-lg fa-lg-out"></i>&nbsp;Logout</a></div>
       </div>
@@ -49,7 +50,7 @@
   </nav>
   
   <div class="text-center forumdesc" style="width: 100%;">
-      <h4>Welcome to the world's coolest forum. This is for noobs just like you!</h4>
+      <h4 style="padding: 30px;">The best way to predict the future is to create it. – Abraham Lincoln</h4>
   </div>
   
    <div style="margin-left: 10%;">

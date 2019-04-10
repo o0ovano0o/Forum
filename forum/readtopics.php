@@ -14,6 +14,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+
  <link rel="stylesheet" href="/forum/styles/main.css" type="text/css">
 <style type="text/css">
   body {
@@ -41,7 +42,7 @@
                echo '<a class="navbar-brand" href="#"> <i class="fa d-inline fa-lg fas fa-user"></i>&nbsp;'.$_SESSION["username"];
             } 
             else
-            echo  '<a class="navbar-brand" href="login.php"> <i class="fa d-inline fa-lg fa-sign-in"></i>&nbsp;Login'; ?>
+            echo  '<a class="navbar-brand" href=\forum/login.php> <i class="fa d-inline fa-lg fa-sign-in"></i>&nbsp;Login'; ?>
             </a>
           <a class="navbar-brand" href="/forum/logoutt.php"><i class="fa fa-user  fa-sign-out"></i><i class="fa d-inline fa-lg fa-lg-out"></i>&nbsp;Logout</a></div>
       </div>
@@ -49,22 +50,36 @@
   </nav>
   
 <div class="text-center forumdesc" style="width: 100%;">
-      <p>Welcome to the world's coolest forum. This is for noobs just like you!</p>
+      <h4 style="padding: 30px;">The best way to predict the future is to create it. – Abraham Lincoln</h4>
       
     </div>
-    <div style="margin-left: 5%;">
+    <div style="margin-left: 5%;margin-right: 5%;">
+   <?php
+   if (isset($_SESSION['username'])&&checkuser($_GET['tid'],$_SESSION['username'])) {
+  echo  "<form action='/forum/deletetopic.php?cid=".$_GET['cid']."&scid=".$_GET['scid']."&tid=".$_GET['tid']."' method='POST'><input type='submit' style='display:block;background-color:#83DFCE;color:background-color:#83DFCE;;padding:3px;border-radius: 10px;' value='Delete this post'></input></form>";
+}
+?> 
     <?php
       disptopic($_GET['cid'], $_GET['scid'], $_GET['tid']);
+
       echo "<div class='content'><p>All Replies (".countReplies($_GET['cid'], $_GET['scid'], $_GET['tid']).")
           </p></div>";
       dispreplies($_GET['cid'], $_GET['scid'], $_GET['tid']);
+      addview($_GET['cid'], $_GET['scid'], $_GET['tid']);
     ?>
   </div>
-  <div style="clear: both;margin-left: 5%;">
+     <div style="clear: both">
     <?php
-        replylink($_GET['cid'], $_GET['scid'], $_GET['tid']);
+      if (isset($_SESSION['username'])) {
+        replytopost($_GET['cid'], $_GET['scid'], $_GET['tid']);
+      }
+      else {
+          echo "<p>please login first or <a href='/forum/regest.html'>click here</a> to register.</p>";
+        }
       ?>
     </div>
+
+ 
     <div class="py-3" id="footer" style="clear: both;">
       <div class="container">
         <div class="row">

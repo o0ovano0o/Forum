@@ -47,9 +47,10 @@
       </div>
     </div>
   </nav>
+
   
   <div class="text-center forumdesc" style="width: 100%;">
-      <h4>Welcome to the world's coolest forum. This is for noobs just like you!</h4>
+      <h4 style="padding: 30px;">The best way to predict the future is to create it. – Abraham Lincoln</h4>
   </div>
     <div class="content" style="width: 90%;margin-left: 5%;">
       <?php dispcategories(); ?>

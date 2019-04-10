@@ -12,6 +12,22 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
   <link rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="styles/theme.css" type="text/css">
+  <script type="text/javascript"><!-- Begin
+function checkPw(form) {
+pw1 = form.passwordinput.value;
+pw2 = form.password.value;
+
+if (pw1 != pw2) {
+alert ("\nYou did not enter the same new password twice. Please re-enter your password.")
+return false;
+}
+else return true;
+}
+</script>
+
+
+
+
 </head>
 
 <body class="w-100">
@@ -34,13 +50,21 @@
       <div class="row">
         <div class="p-5 col-lg-6 col-10 mx-auto border">
           <h1 class="mb-4">UDict Forum</h1>
-          <form  action="newuser.php" method="POST">
-            <div class="form-group"> <input type="text" id="usernameinput" name="usernameinput"  class="form-control" placeholder="Name" required="on" > </div>
-            <div class="form-group"> <input type="email" class="form-control" placeholder="Email" id="form14" required="on"> </div>
-            <div class="form-group"> <input type="password" class="form-control" placeholder="Password" iid="passwordinput" name="passwordinput" required="on"> <small class="form-text text-muted text-right">
+          <form onSubmit="return checkPw(this)" action="newuser.php"  method="POST">
+            <div class="form-group"> <input type="text" id="usernameinput" name="usernameinput"  class="form-control" placeholder="Name" required="on" autocomplete="off" maxlength="15" value=""> </div>
+            <div class="form-group"> <input type="password" class="form-control" placeholder="Password" id="password" required="on" autocomplete="off" value="" maxlength="64"> </div>
+            <div class="form-group"> <input type="password" class="form-control" placeholder="Password" id="passwordinput" name="passwordinput" required="on"> <small class="form-text text-muted text-right">
                 <a href="#">You have an account?</a>
               </small> </div> <button type="submit" class="btn btn-primary">Register</button>
-          </form>
+            
+          </form>  
+          <?php 
+                      if (isset($_GET['status'])) {
+                  if ($_GET['status'] == 'regester_fail') {
+                    echo "<script type='text/javascript'>alert('this username is not available. please try another')</script>";
+                  } 
+                }
+              ?>
         </div>
       </div>
     </div>
