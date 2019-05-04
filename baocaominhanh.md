@@ -11,7 +11,9 @@ Môn: CNPM - Trình bày các user story của bản thân</h2>
 <a href="https://www.w3schools.com/css/default.asp">Tài liệu về Bootstrap</a>
  <li>Tìm hiểu về MySQl để tạo database. (5h)	</li>
 <a href="https://www.w3schools.com/sql/">Tài liệu về MySQL.</a>  
-<li>Tìm hiểu về API Translate để tạo được chức năng dịch văn bản
+ <li>Tìm hiểu về API Translate để tạo được chức năng dịch văn bản</li>
 <a href="https://www.w3schools.com/howto/howto_google_translate.asp">Tài liệu về API Translate</a>
-
+ <li>Tìm hiểu về PHP để kết nối giao diện với MySQL và API Translate</li>
+ <a href="https://www.w3schools.com/php/php_mysql_connect.asp">Tài liệu về PHP</a>
+ <h3>2. Là một khách hàng tôi muốn học ngữ pháp Tiếng Anh để nâng cao kỹ năng Tiếng Anh của mình </h3>
 </div>
