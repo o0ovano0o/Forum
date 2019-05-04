@@ -9,7 +9,7 @@ Môn: CNPM - Trình bày các user story của bản thân</h2>
 <a href="https://www.w3schools.com/html/">Tài liệu về HTML</a>
 <a href="https://www.w3schools.com/css/default.asp">Tài liệu về CSS</a>
 <a href="https://www.w3schools.com/css/default.asp">Tài liệu về Bootstrap</a>
- <li>Tìm hiểu về MySQl để tạo database. (5h)	</li>
+ <li>Tìm hiểu về MySQl để tạo database	</li>
 <a href="https://www.w3schools.com/sql/">Tài liệu về MySQL.</a>  
  <li>Tìm hiểu về API Translate để tạo được chức năng dịch văn bản</li>
 <a href="https://www.w3schools.com/howto/howto_google_translate.asp">Tài liệu về API Translate</a>
@@ -29,6 +29,24 @@ Môn: CNPM - Trình bày các user story của bản thân</h2>
    <li>Thiết kế giao diện cơ bản</li>
    <li>Thiết kế thanh chọn và khung hiển thị nội dung lý thuyết </li>
    <a href="https://www.w3schools.com/html/">Tài liệu về HTML</a>
+  </ul>
+  <li>Tìm hiểu về MySQL để xây dựng database cho lý thuyết Tiếng Anh</li>
+  <a href="https://www.w3schools.com/sql/"></a>
+  <li>Xây dựng cơ sở dữ liệu Lý thuyết Tiếng Anh</li>
+  <ul><li>Tải dữ liệu lý thuyết Tiếng Anh lên database, chia theo từng nội dung</li></ul>
+  <li>Kết nối cơ sở dữ liệu</li>
+  <ul><li>Sử dụng PHP để kết nối cơ sở dữ liệu</li>
+   <a href="https://www.w3schools.com/php/php_mysql_intro.asp">Tài liệu kết nối cơ sở dữ liệu</a>
+  </ul>
+  <li>Xuất thông tin được lựa chọn một cách khoa học rõ ràng </li>
+  <ul>
+   <li>Sử dụng HTML để xuất dữ liệu ra màn hình </li>
+  </ul>
+  <li>Tạo khung bình luận có kết nối tài khoản Facebook để người dùng nêu ý kiến</li>
+  <li>Kiểm thử hộp đen và sửa lỗi</li>
+  <ul>
+   <a href="https://docs.google.com/document/d/1a4i_31R8WBUAnF91syr1FwBpKoAiTY6rEJt1xWjb74M/edit#heading=h.22k63k6hf7hl">Tài liệu về kiểm thử hộp đen</a>
+   <li>Thông qua thao tác các chức năng để phán đoán lỗi  </li>
   </ul>
  </ul>
 </div>
