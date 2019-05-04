@@ -54,6 +54,7 @@ Môn: CNPM - Trình bày các user story của bản thân</h2>
   <a href="https://docs.google.com/document/d/1a4i_31R8WBUAnF91syr1FwBpKoAiTY6rEJt1xWjb74M/edit#heading=h.22k63k6hf7hl">Tài liệu về tái cấu trúc và code xấu</a>
  </ul>
  <a href="https://github.com/dominan/INT2208-7-2019/blob/master/nh%C3%B3m-10/lythuyet1.php">Sản phẩm sau khi hoàn thiện</a>
+ <img src="https://github.com/dominan/Forum/blob/patch-1/lythuyet.png">
 </div>
 <div>
  <h3>3, Là một người dùng tôi muốn dịch tài liệu tiếng Anh sang tiếng Việt </h3>
